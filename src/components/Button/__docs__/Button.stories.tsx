@@ -9,21 +9,29 @@ const meta: Meta<typeof Example> = {
 export default meta;
 type Story = StoryObj<typeof Example>;
 
-export const Primary: Story = {
+export const Active: Story = {
     args: {
         text: "Button",
-        primary: true,
         disabled: false,
+        color: "#FFF",
+        backgroundColor: "#FF5655",
         size: "small",
         onClick: () => console.log("Button"),
+        fontSize: "15px",
+        borderRadius: "10px",
+        fontWeight: 700,
     },
 };
-export const Secondary: Story = {
+export const Disabled: Story = {
     args: {
         text: "Button",
-        primary: false,
-        disabled: false,
+        disabled: true,
+        color: "#FFF",
+        backgroundColor: "#ecafaf",
         size: "small",
         onClick: () => console.log("Button"),
+        fontSize: "15px",
+        borderRadius: "10px",
+        fontWeight: 700,
     },
 };

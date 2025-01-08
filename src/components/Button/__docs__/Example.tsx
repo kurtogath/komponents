@@ -4,9 +4,13 @@ import Button, { ButtonProps } from "../Button";
 const Example: FC<ButtonProps> = ({
     disabled = false,
     onClick = () => {},
-    primary = true,
     size = "small",
     text = "Button",
+    color = "#FFF",
+    backgroundColor = "#FF5655",
+    fontSize = "15px",
+    borderRadius = "10px",
+    fontWeight = 700,
 }) => {
     return (
         <div
@@ -22,7 +26,11 @@ const Example: FC<ButtonProps> = ({
                 text={text}
                 disabled={disabled}
                 onClick={onClick}
-                primary={primary}
+                color={color}
+                backgroundColor={backgroundColor}
+                fontSize={fontSize}
+                borderRadius={borderRadius}
+                fontWeight={fontWeight}
             />
         </div>
     );
